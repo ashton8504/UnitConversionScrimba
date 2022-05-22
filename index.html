@@ -1,0 +1,45 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Metric/Imperial Unit Conversion</h1>
+                <input oninput="getUnitData()" type="number" class="unit-input" id="unit-el" value="0">
+            </header>
+            <div class="units">
+                <div class="unit">
+                    <div class="unit__label">
+                        <strong>Length (Meter/Feet)</strong>
+                    </div>
+                    <div class="unit__item">
+                        <span class="unit-number">0</span> meters = <span data-conversion="feet">0.000</span> feet | <span class="unit-number">0</span> feet = <span data-conversion="meter">0.000</span> meters
+                    </div>
+                </div>
+                
+                <div class="unit">
+                    <div class="unit__label">
+                        <strong>Volume (Liters/Gallons)</strong>
+                    </div>
+                    <div class="unit__item">
+                        <span class="unit-number">0</span> liters = <span data-conversion="liter">0.000</span> gallons | <span class="unit-number">0</span> gallons = <span data-conversion="gallon">0.000</span> liters
+                    </div>
+                </div>
+                
+                <div class="unit">
+                    <div class="unit__label">
+                        <strong>Mass (Kilograms/Pounds)</strong>
+                    </div>
+                    <div class="unit__item">
+                        <span class="unit-number">0</span> kilos = <span  data-conversion="kilo">0.000</span> pounds | <span class="unit-number">0</span> pounds = <span data-conversion="pound">0.000</span> kilos
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
